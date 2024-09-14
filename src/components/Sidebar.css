@@ -1,0 +1,75 @@
+/* ContactsSidebar.css */
+.contacts-sidebar {
+    float: right;
+    width: 25%;
+    color: white;
+    padding: 25px;
+    height: 100vh;
+  }
+  
+  .contacts-sidebar__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .contacts-sidebar__icons span {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .contacts-sidebar__list {
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  
+  .contact-item:hover {
+    background-color: #3A3B3C;
+    border-radius: 8px;
+  }
+  
+  .contact-item__avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .contact-item__info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-item__info h4 {
+    margin: 0;
+  }
+  
+  .contact-item__online-status {
+    color: green;
+    margin-left: 5px;
+  }
+  
+  .contact-item__last-seen {
+    color: gray;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  @media (max-width:1400px){
+    
+    .contacts-sidebar {
+        display: none;
+        float: left;
+        width: 25%;
+        color: white;
+        padding: 25px;
+      }
+      }
+      
